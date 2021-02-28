@@ -79,8 +79,7 @@ function vowelBonusScore(vowel) {
 	return vowelBonusScore;
  }
 
-//let vowelWord = input.question("Enter a Word to get vowel Score: ")
-//console.log(vowelBonusScore(vowelWord));
+
 
 let scrabbleScore;
 
@@ -91,9 +90,7 @@ const scoringAlgorithms = [
   ['Scrabble','The traditional scoring algorithm.','Uses the oldScrabbleScorer() function to determine the score for a given word.']
   ];
 
-//console.log(scoringAlgorithms);
-//console.log("algorithm name: ", scoringAlgorithms[0].name);
-//console.log("scorerFunction result: ", scoringAlgorithms[0].scorerFunction("JavaScript")); 
+ 
 
 function scorerPrompt(choice, word) {
     //let score = input.question("Choose a value between 0 to 2 : ");
@@ -110,32 +107,20 @@ function scorerPrompt(choice, word) {
 
 }
 
-//tortoiseTwo["age"] = 120;
-//tortoiseTwo["speed"] = 'Faster than the hare.'
+
 
 function transform() {
-  //word = word.toUpperCase();
-	//let letterPoints = "";
-  //let score = 0;
   let structure = [];
   	for (let i = 0; i < oldPointStructure.length; i++) {
  
 	  for (const pointValue in oldPointStructure) {
           structure[oldPointStructure[i].toLowerCase] = pointValue;
-		 /*if (oldPointStructure[pointValue].includes(word[i])) {
-			letterPoints += `Points for '${word[i]}': ${pointValue}\n`;
-          score = score + Number(pointValue);
-     }*/
- 
-	  }
+		  }
 	}
   //console.log(`Score for '${word}': ${score}`)
   return structure;
 };
 
-let newPointStructure;
-console.log(transform(newPointStructure));
-//console.log(newPointStructure)
 const newPointStructure = {
   1: ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't'],
   2: ['d', 'g'],
@@ -151,13 +136,7 @@ function runProgram() {
    initialPrompt();
    
 }
-/*console.log(newPointStructure);
-console.log("Scrabble scoring values for");
-console.log("letter a: ", newPointStructure.A);
-console.log("letter j: ", newPointStructure.J);
-console.log("letter z: ", newPointStructure["Z"]);*/
-// Don't write any code below this line //
-// And don't change these or your program will not run as expected //
+
 module.exports = {
    initialPrompt: initialPrompt,
    transform: transform,

@@ -43,8 +43,8 @@ function initialPrompt() {
    console.log("1 - Vowel Bonus: Vowels are worth 3 points");
    console.log("2 - Scrabble: Uses scrabble point system \n");
    let option = input.question("Enter 0, 1, or 2 : ");
-   console.log(scorerPrompt(option,word));
-   //console.log(oldScrabbleScorer(useWord));   
+   scorerPrompt(option,word);
+      
 };
 
 function simpleScore(simple) {
